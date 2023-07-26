@@ -24,7 +24,7 @@ function showInstructions() {
 // Function to go back to the start scene and redirect to another page
 function backToStartSceneAndRedirect() {
     // Replace 'https://www.example.com' with the URL of the website you want to redirect to
-    window.location.href = 'https://bryanisrealomgomg.github.io/Giftko/';
+    window.location.href = 'https://bryanisrealomgomg.github.io/Co/';
 }
 
 // Function to fade out everything and go back to the start scene
