@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video id="videoBackground" autoplay muted loop>
+        <source src="background-video.mp4" type="video/mp4">
+        <!-- Add additional video formats for cross-browser compatibility -->
+        <!-- <source src="background-video.webm" type="video/webm"> -->
+        <!-- <source src="background-video.ogv" type="video/ogg"> -->
+    </video>
+
+    <div class="center">
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <section class="game-section" id="instructions">
+        <div class="center">
+            <div class="video-button" onclick="fadeOutEverythingAndGoBack()">
+                <video src="pixel-man-video.mp4" alt="Pixel Man" id="pixelManVideo" autoplay muted loop></video>
+                <span class="button-text"></span>
+            </div>
+            <div class="instructions-text">
+                <h2>This is Bryan</h2>
+                <p>
+                    Hiii wondering what this is all about? find it out yourself sis. This is Bryan, he will be your guide. (click mo si bryan sis.)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New scene with the new background (Initially hidden) -->
+    <section class="game-section" id="newScene">
+        <div class="center">
+            <div class="instructions-text">
+                <h2>Hi there..</h2>
+                <p>
+                    I'm Bryan, I will be your guide.
+                </p>
+            </div>
+            <div class="left">
+                <button id="backToStartButton">Back to Start</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

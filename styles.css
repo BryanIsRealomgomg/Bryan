@@ -1,0 +1,113 @@
+/* Import the Lemon Milk font using @font-face */
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('lemon-milk.ttf') format('truetype'); /* Update the path to your font file */
+    /* You can add additional src lines for different font formats (e.g., woff, woff2) for better browser compatibility */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Your existing CSS code here */
+
+/* Additional CSS for the fade-in and fade-out animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeDown {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+.fade-down {
+    animation: fadeDown 1s forwards;
+}
+
+/* Set up the video background */
+#videoBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Styling for the centered button with a yellow background */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#startButton {
+    padding: 12px 24px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Lemon Milk', sans-serif;
+}
+
+#startButton:hover {
+    background-color: #2980b9;
+}
+
+/* Styling for the game sections */
+.game-section {
+    display: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.game-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Lemon Milk', sans-serif;
+}
+
+/* Styling for the pixel man video button */
+#pixelManVideo {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+    display: none;
+    position: relative;
+    animation: fadeDown 1s forwards;
+}
+
+/* Apply the Lemon Milk font to the body */
+body {
+    font-family: 'Lemon Milk', sans-serif;
+}
